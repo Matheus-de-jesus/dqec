@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta de Armador</title>
+  <link rel="stylesheet" href="\webapp\assets\styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">DQEC</div>
+    <div class="header-actions">
+      <a class="btn-icon" href="#">⚙</a>
+
+      <a class="btn-logout" href="login.html">LOGOUT</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Digite o numero do Container ou Booking</h2>
+
+      <div class="input-wrapper">
+        <input type="text" id="campoConsulta" placeholder="Ex.: ABCU1234567 ou 1234567890" />
+      </div>
+
+      <a class="btn-primary" href="#NaoEncontrado">CONSULTAR ARMADOR</a>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="NaoEncontrado">
+    <div class="modal-box">
+      <p>CONTAINER não foi encontrado.</p>
+      <a href="#" class="btn-fechar">Fechar</a>
+    </div>
+  </div>
+
+</body>
+</html>
